@@ -6,13 +6,13 @@ const temp = document.getElementById('=');
 const body= document.querySelector("body");
 const toggle = document.getElementById('check');
 const toggleBox =document.getElementById('toggle')
-let bool =true;
+let darkmode =false;
 
 
 //function for toggle
 toggle.addEventListener("click",()=>{
-    if(bool==false){
-        bool=true;
+    if(darkmode==false){
+        darkmode=true;
         body.style.backgroundColor="rgba(0, 0, 0, 0.749)";
         toggleBox.style.backgroundColor="black";
         
@@ -20,7 +20,7 @@ toggle.addEventListener("click",()=>{
     else{
         body.style.backgroundColor="beige";
         toggleBox.style.backgroundColor="lightgray";
-        bool=false;
+        darkmode=false;
         
     }
 })
